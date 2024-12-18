@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 //const test = 'tet';
@@ -3344,14 +3342,22 @@ function App() {
   const [count, setCount] = useState(0)
   console.log(test)
 
+  //Overwhelm, Escape Strategy, True Strike, Critical Exploit,Serrated Edges, Viciousness, Catapult, Unbound Forces, Adverse Growth
+  // Conservative Casting, Sharpened Claw, Ricochet
+  // RICCHET FALLING THUNDER
+
   // List of components to exclude
 const excludeComponents = ['fear', 'suffering', 'despair', 'isolation'];
 
 // Function to filter out items based on excluded components
 const filterItems = (items: any, excluded: any) => {
+  if (excluded ) {
   return items.filter((item: any) => 
     !item.components.some((component: any) => excluded.some((exclusion: any) => component.toLowerCase().includes(exclusion)))
   );
+} else {
+  return items;
+}
 };
 
 const filteredItems = filterItems(test, excludeComponents);
