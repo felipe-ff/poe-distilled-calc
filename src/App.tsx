@@ -3339,7 +3339,6 @@ const test = [
 
 
 function App() {
-  const [count, setCount] = useState(0)
   console.log(test)
 
   //Overwhelm, Escape Strategy, True Strike, Critical Exploit,Serrated Edges, Viciousness, Catapult, Unbound Forces, Adverse Growth
